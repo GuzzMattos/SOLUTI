@@ -1,0 +1,43 @@
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--azul);
+    color: white;
+    height: 75px;
+}
+#navbar span {
+    font-size: 1.5em;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    height: 75px;
+    width: 50%;
+}
+#navbar ul li{
+    list-style-type:none; 
+    margin: 0px 15px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin-left: 20px;
+}
+#navbar div img {
+    height: 40px;
+}
+
+.item-selected{
+    border-bottom: 5px solid var(--dourado);
+    box-sizing: border-box;
+    margin-bottom: -5px !important;
+}

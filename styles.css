@@ -1,0 +1,325 @@
+:root{
+    --text-color: #2c3035;
+    --pink-detail: #c98b90;
+    --light-pink: #EDD6D6;
+    --azul: #132042;
+    --dourado: #E5D08F
+}
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    color: var(--text-color);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#background-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+#background-home img{
+    object-fit: cover;
+    width: 100%;
+    height: calc(100vh - 75px);
+ }
+#header-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: -5%;
+}
+
+#background-home h2,#background-home p{
+    width: 40%;
+    margin: 0;
+}
+#background-home h2{
+    font-size: 4em;
+}
+#background-home p{
+    font-size: 1.5em;
+}
+
+#mission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 75px; 
+}
+
+#mission img {
+    height: calc(150px + 10vw);
+}
+#mission-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#mission-content {
+    width: 50%;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#mission-content h3 {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#mission-content p{
+    font-size: 1.5em;
+    margin: 0;
+    text-align: justify;
+}
+
+.button-style{
+    background-color: var(--azul);
+    padding: 20px 20%;
+    border-radius: 10px;
+    margin-top: 20px;
+    white-space: nowrap;
+    font-size: calc(.2em + 1.1vw);
+    font-weight: 600;
+}
+
+.line-detail {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.line-detail div {
+    height: 5px;
+    background-color: var(--dourado);
+    width: 20%;
+}
+
+.line-detail-90 {
+    justify-content: center;
+}
+.line-detail-90 div {
+    width: 90%;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+}
+
+#services-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul);
+    height: 15vh;
+}
+
+#services-title h3 {
+    font-size: 4em;
+    color: white;
+}
+
+#services-content {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#services-cards {
+    display: flex;
+    width: 100%;
+    align-items: center; 
+    justify-content: space-evenly;
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 8em;
+    text-align: center;
+}
+
+.services-card-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    border: 10px solid #31416c;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services-card-image img {
+    height: 75px;
+}
+
+.services-card strong {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#services-button {
+    width: 10%;
+}
+
+#benefits {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#benefits h3 {
+    font-size: 3em;
+    text-align: center;
+
+}
+
+#benefits ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#benefits li {
+    padding-top: 10px;
+}
+
+
+#benefits p,
+#benefits ul li {
+    font-size: 1.2em;
+}
+
+/* Carrossel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 75px);
+    overflow: hidden;
+}
+
+.carousel-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botões do carrossel */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2em;
+    z-index: 10;
+}
+
+.carousel-btn.prev {
+    left: 20px;
+}
+
+.carousel-btn.next {
+    right: 20px;
+}
+
+#header-title {
+    position: absolute;
+    top: 25%;
+    left: 10%; /* Posiciona o texto conforme o layout original */
+    width: 80%;
+}
+
+#header-title h2 {
+    font-size: 4em;
+    margin: 0;
+}
+
+#header-title p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#header-title-c2 {
+    position: absolute;
+    top: 25%;
+    left: 10%; /* Posiciona o texto conforme o layout original */
+    width: 80%;
+}
+
+#header-title-c2 h2 {
+    font-size: 4em;
+    margin: 0;
+}
+
+#header-title-c2 p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#sobre {
+    margin: 10px 150px;
+    padding: 10px;
+}
+
+#sobre h3 {
+    margin: 0;
+    text-align: center; /* Centraliza o título */
+    font-size: 5em; /* Define o tamanho da fonte do título (ajuste conforme necessário) */
+    font-style: italic; /* Torna o texto em itálico */
+}
+#sobre p {
+    margin-top: 40px;
+    line-height: 1.6;
+    font-size: 1.5em; /* Define o tamanho da fonte do título (ajuste conforme necessário) */
+
+}
+
+#p-sobre-ultimo {
+    margin-bottom: 100px
+
+}
+.social-icon {
+    width: 15px;
+    vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
+    margin-right: 3px; /* Espaço entre o ícone e o texto */
+    display: inline-block;
+    margin-top: -2px
+}

@@ -1,0 +1,28 @@
+/* Estilos para o botão do WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px; /* Distância do botão do fundo da tela */
+    right: 20px;  /* Distância do botão da lateral direita da tela */
+    z-index: 1000; /* Garante que o botão esteja sobre outros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; /* Cor de fundo do botão (verde do WhatsApp) */
+    border-radius: 50%;
+    width: 60px; /* Largura do botão */
+    height: 60px; /* Altura do botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao botão */
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+.whatsapp-btn img {
+    width: 30px; /* Largura do ícone dentro do botão */
+    height: auto;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E; /* Cor de fundo quando o botão está em hover */
+}
