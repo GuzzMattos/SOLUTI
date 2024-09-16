@@ -25,25 +25,27 @@
     <a href="https://wa.me/+554232222115" class="whatsapp-btn" target="_blank" title="Fale conosco no WhatsApp">
         <img src="imgs/whatsapp-icon.png" alt="WhatsApp">
     </a>
-    <div id="navbar">
-        <div>
-            <img src="imgs/soluti-icon.png" alt="soluti-logo">
-        </div>
-
-        <ul>
-            <li class="item-selected"><a href="#"
-                    onclick="document.getElementById('navbar').scrollIntoView({ behavior: 'smooth' });">Home</a></li>
-            <li><a onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });"
-                    href="#">Serviços</a></li>
-            <li><a onclick="document.getElementById('sobre').scrollIntoView({ behavior: 'smooth' });" href="#">Sobre</a>
-            </li>
-        </ul>
-    </div>
-    <div class="carousel-container">
+    <header class="header">
+        <img class="logo-nav" src="imgs/soluti-icon.png" alt="soluti-logo">
+        <nav class="nav">
+            <button class="btn-menu" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false"><img src="/imgs/hamburguer.png" alt="hamburger"><span
+                    class="hamburguer"></span></button>
+            </div>
+            <ul id="menu" class="menu" role="">
+                <li id="home-link" class="item-selected"><a href="#topo">Home</a>
+                </li>
+                <li id="services-link"><a href="#services">Serviços</a></li>
+                <li id="about-link"><a href="#sobre">Sobre</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="topo" class="carousel-container">
         <div class="carousel-slide" id="slide-1">
             <img src="/imgs/background-home.png" alt="background-img">
             <div id="header-title">
-                <h2>Serviços contábeis de forma ágil, transparente e econômica</h2>
+                <h2>Serviços contábeis de uma forma ágil e transparente </h2>
                 <p>Soluções contábeis inteligentes e personalizadas para você alcançar seus objetivos de forma
                     eficiente, simplificada e com total confiança.
                 </p>
@@ -60,9 +62,9 @@
         <div class="carousel-slide" id="slide-3">
             <img src="/imgs/background-home-2.jpg" alt="background-img">
             <div id="header-title">
-                <h2>Serviços contabeis voltados para area médica.</h2>
-                <p>Temos uma equipe experiente e especializada em empresas médicas, apresentando soluções praticas e
-                    eficientes para esse tipo de negocio.
+                <h2>Serviços contábeis voltados para área médica.</h2>
+                <p>Temos uma equipe experiente e especializada em empresas médicas, apresentando soluções práticas e
+                    eficientes para esse tipo de negócio.
                 </p>
             </div>
         </div>
@@ -111,7 +113,7 @@
                     <div class="services-card-image">
                         <img src="imgs/card-arrow.png" alt="card-image">
                     </div>
-                    <strong>Contabilidade para área médica e da saúde</strong>
+                    <strong>Contabilidade para a área médica e da saúde</strong>
 
                     <a class="button-style" href="https://wa.me/+554232222115">Saiba mais</a>
 
@@ -149,8 +151,8 @@
         </div>
         <div id="sobre">
             <h3>Nossa História</h3>
-            <p>Fundada em 1999, a Soluti Contadores associados é um escritorio de contabilidade dedicada a oferecer
-                serviços contábeis de excelência para empresas . Com mais de 25 anos de experiência no mercado,
+            <p>Fundada em 1999, a Soluti Contadores associados é um escritório de contabilidade dedicada a oferecer
+                serviços contábeis de excelência para empresas. Com mais de 25 anos de experiência no mercado,
                 temos o
                 orgulho de ser um parceiro confiável para a gestão financeira e contábil de nossos clientes.
             </p>
@@ -172,7 +174,7 @@
             <div class="footer-content">
                 <div class="footer-content-1 footer-content-div">
                     <div class="footer-content-logo">
-                        <img src="imgs/soluti-icon.png" alt="soluti-icon">
+                        <img src="imgs/soluti-icon-footer.png" alt="soluti-icon">
                     </div>
 
                     <span>Rua Comendador Miró, 1475 </span>
@@ -198,9 +200,9 @@
 
                 <div class="footer-content-3 footer-content-div">
                     <strong>Site</strong>
-                    <span><a href="#">Home</a></span>
-                    <span><a href="#">Serviços</a></span>
-                    <span><a href="#">Sobre</a></span>
+                    <span><a href="#topo">Home</a></span>
+                    <span><a href="#services">Serviços</a></span>
+                    <span><a href="#sobre">Sobre</a></span>
                 </div>
             </div>
             <div class="footer-brand">
@@ -208,27 +210,7 @@
             </div>
         </div>
     </div>
-    <script>
-        let slideIndex = 0;
-        const slides = document.querySelectorAll('.carousel-slide');
-        showSlide(slideIndex);
-
-        function showSlide(index) {
-            slides.forEach((slide, i) => {
-                slide.style.display = i === index ? 'flex' : 'none';
-            });
-        }
-
-        function moveSlide(step) {
-            slideIndex = (slideIndex + step + slides.length) % slides.length;
-            showSlide(slideIndex);
-        }
-
-        setInterval(() => {
-            moveSlide(1);
-        }, 10000);
-
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>

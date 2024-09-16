@@ -5,6 +5,14 @@
     --azul: #132042;
     --dourado: #E5D08F
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
 body{
     box-sizing: border-box;
     padding: 0;
@@ -230,6 +238,7 @@ a {
     align-items: center;
     flex-direction: column;
     color: white;
+    font-size: 1em; /* Ajuste o tamanho da fonte */
 }
 
 .carousel-slide img {
@@ -322,4 +331,97 @@ a {
     margin-right: 3px; /* Espaço entre o ícone e o texto */
     display: inline-block;
     margin-top: -2px
+}
+
+
+@media (max-width: 768px) {
+    .carousel-slide {
+        margin-top: 30px;
+        height: 50vh; /* Ajuste a altura do carrossel para telas menores */
+    }
+
+    #header-title, #header-title-c2 {
+        top: 15%; /* Ajuste a posição vertical do texto */
+        left: 5%;
+        width: 90%;
+    }
+    #header-title h2, #header-title-c2 h2 {
+        font-size: 2em;
+        text-align:center;
+        padding: 0 10px;
+        height:40%;
+    }
+    
+    #header-title p, #header-title-c2 p {
+        text-align:center;
+        font-size: 1em;
+        
+    }
+    #mission {
+        flex-direction: column;
+        margin: 20px;
+    }
+    #mission-content h3 {
+        font-size: 1.5em; /* Ajuste o tamanho da fonte */
+    }
+    #mission img {
+        padding-top: -5em;
+        margin-top: -37em;
+        height: 100px; /* Ajuste o tamanho da imagem */
+    }
+
+    #mission-content {
+        margin-top: -15em;
+
+        width: 100%;
+        margin-left: 0;
+    }
+    .button-style {
+        font-size: 1em;
+    }
+    #mission-content p {
+        font-size: 0.9em; /* Ajuste o tamanho da fonte */
+    }
+    #services-cards {
+        flex-direction: column;
+    }
+    #services-title{
+        font-size: 0.5em;
+        height:9vh;
+    }
+    .services-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services-card-image {
+        height: 100px;
+        width: 100px;
+    }
+
+    .services-card strong {
+        font-size: 1.2em;
+    }
+    .carousel-btn {
+        font-size: 1.5em; /* Reduza o tamanho dos botões */
+        padding: 8px;
+    }
+    #sobre {
+        margin: 10px 10px; /* Reduza ainda mais a margem lateral */
+    }
+
+    #sobre h3 {
+        font-size: 1.8em; /* Ajuste o tamanho da fonte */
+    }
+
+    #sobre p {
+        font-size: 0.9em; /* Ajuste o tamanho da fonte */
+        text-align: center;
+    }
+    #benefits h3 {
+        font-size: 2em;
+    }
+    #benefits ul li {
+        font-size: 1em;
+    }
 }

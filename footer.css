@@ -51,3 +51,18 @@
   align-items: flex-end;
   justify-content: center;
 }
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+  }
+
+  .footer-content-1, .footer-content-2, .footer-content-3 {
+      width: 100%;
+      text-align: center;
+  }
+
+  .footer-content-logo img {
+      width: 10rem;
+  }
+}
