@@ -366,12 +366,12 @@ a {
     }
     #mission img {
         padding-top: -5em;
-        margin-top: -33em;
+        margin-top: -31em;
         height: 100px; /* Ajuste o tamanho da imagem */
     }
 
     #mission-content {
-        margin-top: -12em;
+        margin-top: -10em;
 
         width: 100%;
         margin-left: 0;
