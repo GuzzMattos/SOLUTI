@@ -337,7 +337,7 @@ a {
 @media (max-width: 768px) {
     .carousel-slide {
         margin-top: 30px;
-        height: 50vh; /* Ajuste a altura do carrossel para telas menores */
+        height: 40vh; /* Ajuste a altura do carrossel para telas menores */
     }
 
     #header-title, #header-title-c2 {
@@ -347,9 +347,11 @@ a {
     }
     #header-title h2, #header-title-c2 h2 {
         font-size: 6vw;
+        margin-top: 4vw;
         text-align:center;
         padding: 0 10px;
         height:40%;
+        margin-bottom:5vw;
     }
     
     #header-title p, #header-title-c2 p {
@@ -405,6 +407,7 @@ a {
     .carousel-btn {
         font-size: 1.5em; /* Reduza o tamanho dos botões */
         padding: 8px;
+        margin-top: -200px;
     }
     #sobre {
         margin: 10px 10px; /* Reduza ainda mais a margem lateral */
