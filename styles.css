@@ -365,13 +365,13 @@ a {
         font-size: 1.5em; /* Ajuste o tamanho da fonte */
     }
     #mission img {
-        padding-top: -5em;
-        margin-top: -31em;
+        padding-top: -5vh;
+        margin-top: -27em;
         height: 100px; /* Ajuste o tamanho da imagem */
     }
 
     #mission-content {
-        margin-top: -10em;
+        margin-top: -15vh;
 
         width: 100%;
         margin-left: 0;
