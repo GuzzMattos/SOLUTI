@@ -16,6 +16,7 @@ body{
     margin: 0;
     font-family: "Poppins";
     color: var(--text-color);
+    width: 100%;
 }
 a {
     text-decoration: none;
@@ -100,10 +101,6 @@ a {
     white-space: nowrap;
     font-size: calc(.2em + 1.1vw);
     font-weight: 600;
-    cursor: pointer;
-}
-.mb-50 {
-    margin-bottom: 50px;
 }
 
 .line-detail {
@@ -355,6 +352,9 @@ a {
 
 
 @media (max-width: 768px) {
+    .formtitle {
+        font-size: 10px;
+    }
     #topo {
         height:40vh;
         }
@@ -468,6 +468,11 @@ a {
     #p-sobre-ultimo {
         margin-bottom: 20px;
     }
+    #form input {
+        width: 15em;
+    
+    }
+
    
 }
 #nossa-equipe-2p {
@@ -480,18 +485,16 @@ a {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 100%;
-    margin: 20px 0;
 
 }
 #form input {
-    width: 50em;
+    width: 80vw;
 
 }
 .formtitle {
-    font-size: 3em;
+    font-size: 4vh;
     margin-top: 20px;
-
+    text-align: center;
     margin-bottom: 20px;
 }
 
