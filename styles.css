@@ -530,3 +530,7 @@ a {
 .form-group textarea {
     resize: vertical;
 }
+.tac {
+    text-align: center; 
+    width: 80%;
+}
