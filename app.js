@@ -161,3 +161,27 @@ menuLinks2.forEach(link => {
 
 btnMenu.addEventListener("click", handleButtonClick);
 btnMenu.addEventListener("touchstart", handleButtonClick);
+
+function sendEmail(event) {
+    event.preventDefault();
+
+
+
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !phone || !message) {
+        alert("Por favor, preencha todos os campos antes de enviar.");
+        return;
+    }
+
+    const emailBody = `Nome: ${name}\nTelefone: ${phone}\nMensagem: ${message}`;
+
+    window.location.href = `mailto:soluticontabilidadepg@gmail.com?subject=Contato%20do%20site&body=${encodeURIComponent(emailBody)}`;
+
+    setTimeout(() => {
+        window.location.href = "tks.html"; // Redireciona após envio
+    }, 1000); // Pequeno atraso para simular envio
+}
+

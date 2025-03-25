@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado pelo Contato</title>
+    <style>
+        :root {
+            --azul: #132042;
+            --dourado: #E5D08F;
+            --text-color: #f4f4f4;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 75px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: var(--azul);
+            color: var(--text-color);
+            padding: 20px;
+        }
+
+        a {
+            color: var(--dourado);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #1c2a4a;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--dourado);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: var(--dourado);
+            margin-top: 25px;
+            font-size: 1.4em;
+        }
+
+        p {
+            line-height: 1.8;
+            margin: 15px 0;
+        }
+
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            list-style-type: disc;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #b0b0b0;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            h2 {
+                font-size: 1.1em;
+            }
+
+            p {
+                font-size: 0.95em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Obrigado pelo Contato!</h1>
+        </header>
+        <main>
+            <p>Recebemos sua mensagem e entraremos em contato o mais breve possível.</p>
+            <p>Enquanto isso, sinta-se à vontade para explorar mais sobre nossos serviços.</p>
+            <a href="index.html" class="btn">Voltar para a Página Inicial</a>
+        </main>
+        <footer>
+            <p>&copy; 2023 SOLUTI. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,5 +1,4 @@
 :root{
-
     --azul: #132042;
     --dourado: #E5D08F
 }
@@ -101,6 +100,10 @@ a {
     white-space: nowrap;
     font-size: calc(.2em + 1.1vw);
     font-weight: 600;
+    cursor: pointer;
+}
+.mb-50 {
+    margin-bottom: 50px;
 }
 
 .line-detail {
@@ -469,4 +472,58 @@ a {
 }
 #nossa-equipe-2p {
     margin-bottom:50px;
+}
+
+#form  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    margin: 20px 0;
+
+}
+#form input {
+    width: 50em;
+
+}
+.formtitle {
+    font-size: 3em;
+    margin-top: 20px;
+
+    margin-bottom: 20px;
+}
+
+.textwhite {
+    color: white;
+}
+
+
+#form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
 }
