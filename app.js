@@ -185,3 +185,11 @@ function sendEmail(event) {
     }, 1000); // Pequeno atraso para simular envio
 }
 
+function abrirPopup() {
+    document.getElementById('popup').style.display = 'flex';
+}
+
+function fecharPopup() {
+    document.getElementById('popup').style.display = 'none';
+}
+

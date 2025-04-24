@@ -230,7 +230,13 @@
                 <textarea id="message" name="message" class="form-control" rows="20" required></textarea>
             </div>
             <div class="alinhar">
-            <button type="submit" class="button-style mb-50 textwhite">Enviar</button>
+            <button type="button" class="button-style mb-50 textwhite"  onclick="abrirPopup()">Enviar</button>
+            <div id="popup" class="popup-overlay">
+                <div class="popup-content">
+                  <p>Seu email será aberto, envie o email para fazer o contato</p>
+                  <button type="submit" class="button-style textwhite" onclick="fecharPopup()">Enviar</button>
+                </div>
+              </div>
             </div>
         </form>
     </div>
